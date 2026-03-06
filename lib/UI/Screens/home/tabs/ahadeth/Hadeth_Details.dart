@@ -87,6 +87,12 @@ class HadethDetails extends StatelessWidget {
               left: 10,
               child: Image.asset(AssetsManager.QuranLeftCorner, width: 60),
             ),
+            Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: Image.asset(AssetsManager.mosq2),
+            ),
           ],
         ),
       ),
