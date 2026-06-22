@@ -18,4 +18,5 @@ abstract final class AssetsManager {
   static const tagMahl = "assets/images/TagMahal.jpg";
   static const mosq2 = "assets/images/Mousq2.png";
   static const reading = "assets/images/reading.png";
+  static const backgroundtimeScreen = "assets/images/BackgroundtimeScreen.png";
 }
