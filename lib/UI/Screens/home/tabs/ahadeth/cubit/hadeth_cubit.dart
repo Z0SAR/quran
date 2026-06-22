@@ -8,10 +8,15 @@ class HadethCubit extends HydratedCubit<HadethState> {
   HadethCubit() : super(HadethLoading());
 
   void loadHAdeth() async {
+    if (state is HadethLoaded) {
+      print("Already loaded from HydratedBloc");
+      return;
+    }
+
     emit(HadethLoading());
     List<Map<String, dynamic>> allHadeth = [];
     try {
-      print("fristLoad");
+      print("fristLoad form asset");
       for (int i = 1; i <= 50; i++) {
         String content = await rootBundle.loadString('assets/Hadeeth/h$i.txt');
         List<String> hadethcontent = content.split("\n");

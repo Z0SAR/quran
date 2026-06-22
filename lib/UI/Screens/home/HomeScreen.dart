@@ -23,7 +23,7 @@ class _HomescreenState extends State<Homescreen> {
     AhadethView(),
     SephaTab(),
     RadioTab(),
-    TimeTab(),
+    GetLocation(),
   ];
 
   @override
